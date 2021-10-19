@@ -60,9 +60,8 @@ const showLoader = function () {
  * Удаляет таймаут индикатора, ничего не возвращает.
  */
 const hideLoader = function () {
-    loaderTimeout = setTimeout(function () {
-        loader.style.visibility = 'hidden';
-        loaderTimeout.clearTimeout();
+    setTimeout(function () {
+        loader.style.visibility = 'hidden';      
     }, 700);
 }
 
