@@ -1,6 +1,6 @@
 'use strict';
 
-const action = document.querySelector('.action');
+const action = document.querySelector('.main .action');
 const templateImageCard = document.querySelector('#image');
 const templateImagePopup = document.querySelector('#popup-image');
 const container = document.querySelector('.images');
@@ -174,7 +174,7 @@ const imageHandler = function (evt) {
     evt.preventDefault();
 
     const closestA = evt.target.closest('a');
-    
+
     if (closestA) {
         getPictureInfo(closestA.dataset.id);
     }
