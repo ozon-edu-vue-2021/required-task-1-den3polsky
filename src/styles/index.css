@@ -36,7 +36,7 @@ button:disabled:hover {
     background-color: #CFD8DC;
 }
 
-main {
+.main {
     max-width: 1400px;
     min-height: 100%;
     display: flex;
@@ -100,17 +100,17 @@ a:nth-child(3n) {
     column-count: initial;
 }
 
-figure {
+.figure {
     max-width: 100%;
     min-height: 350px;
     margin: 0;
 }
 
-figure img {
+.figure img {
     border-radius: 6px;
 }
 
-figcaption {
+.figure figcaption {
     color: #424242;
     margin: 5px 0;
 }
