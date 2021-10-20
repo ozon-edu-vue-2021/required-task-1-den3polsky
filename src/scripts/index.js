@@ -170,10 +170,13 @@ const actionHandler = function (evt) {
  * @param {MouseEvent} evt
  */
 const imageHandler = function (evt) {
+
     evt.preventDefault();
 
-    if (evt.target.closest('a')) {
-        getPictureInfo(evt.target.closest('a').dataset.id);
+    const closestA = evt.target.closest('a');
+    
+    if (closestA) {
+        getPictureInfo(closestA.dataset.id);
     }
 }
 
