@@ -110,7 +110,7 @@ a:nth-child(3n) {
     border-radius: 6px;
 }
 
-.figure figcaption {
+.figure .caption {
     color: #424242;
     margin: 5px 0;
 }
