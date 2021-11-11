@@ -36,7 +36,7 @@ button:disabled:hover {
     background-color: #CFD8DC;
 }
 
-main {
+.main {
     max-width: 1400px;
     min-height: 100%;
     display: flex;
@@ -56,6 +56,8 @@ main {
     padding: 10px 20px;
     border-radius: 6px;
     margin: 10px 0;
+    width: fit-content;
+    align-self: center;
 }
 
 .action:hover {
@@ -98,17 +100,17 @@ a:nth-child(3n) {
     column-count: initial;
 }
 
-figure {
+.figure {
     max-width: 100%;
     min-height: 350px;
     margin: 0;
 }
 
-figure img {
+.figure img {
     border-radius: 6px;
 }
 
-figcaption {
+.figure .caption {
     color: #424242;
     margin: 5px 0;
 }
@@ -125,15 +127,14 @@ figcaption {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
+    background-color: rgba(33, 33, 33, 0.5);    
 }
 
 .popup.open {
     visibility: visible;
 }
 
-.action {
+.popup .action {
     position: absolute;
     top: 50px;
     right: 50px;
